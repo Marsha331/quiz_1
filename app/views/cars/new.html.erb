@@ -1,0 +1,9 @@
+<h1>Enter the details of your first car</h1>
+<%= simple_form_for @car do |f| %>
+  <%= f.input :year %>
+  <%= f.input :make %>
+  <%= f.input :model %>
+  <%= f.input :color %>
+  <br />
+  <%= f.submit 'Add my car', class: 'btn btn-danger' %>
+  <% end %>
